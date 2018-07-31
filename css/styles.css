@@ -1,0 +1,156 @@
+/* COLOUR SCHEME {
+    color: #FF8D00;
+    color: #E85E00;
+    color: #FF4200;
+    color: #E81B00;
+    color: #FF001B;
+} */
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Roboto');
+
+* {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.4em;
+    background-color: #333;
+    color: #999;
+}
+
+h1 {
+    font-family: 'Audiowide', serif;
+}
+
+header {
+    background-color: #FF4200;
+    text-align: center;
+    color: #fff;
+}
+
+.masthead {
+    background-image: url('../img/universe-2742113_1920.jpg');
+    padding: 10px;
+}
+
+.tagline {
+    font-family: 'Audiowide', serif;
+    font-size: 1.4rem;
+}
+
+#logo {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 6rem;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 5px;
+}
+
+header nav ul li a {
+    display: block;
+    background-color: #FF8D00;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 96%;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: #FF001B;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px 0;
+}
+
+article, figure {
+    margin-bottom: 50px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: #E85E00;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.socmed {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.socmed a {
+    color: inherit;
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width: 36rem) {
+    body {
+        font-size: 1rem;
+    }
+    header nav ul li {
+        display: inline-block;
+        width: 45%;
+    }
+    header nav ul li a {
+        width: 100%;
+    }
+    .tagline {
+        font-size: 1.8rem;
+    }
+    .socmed {
+    font-size: 3rem;
+}
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 75rem) {
+    body {
+        font-size: 1.25rem;
+    }
+    .masthead {
+        display: inline-block;
+        width: 49%;
+    }
+    header nav {
+        display: inline-block;
+        vertical-align: 5px;
+        width: 50%;
+    }
+    #logo {
+        display: inline-block;
+        padding-bottom: 0;
+        padding-right: 10px;
+        vertical-align: -7px;
+        font-size: 3rem;
+    }
+    .tagline {
+        font-size: 2rem;
+    }
+    .socmed {
+        font-size: 4rem;
+    }
+}
